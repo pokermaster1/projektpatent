@@ -7,6 +7,8 @@
     <title>pat-checkX</title>
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="patCheckerX.png">
+
 </head>
 
 <body class="bg-gray-100">
@@ -36,24 +38,25 @@
                                     Search Synonyms
                                 </button>
                             </div>
-                        </form>
-                    </div>
-                    <div>
-                        <label for="language" class="block font-medium text-gray-700">Language</label>
-                        <select id="language"
-                            class="border-none outline-none p-2 w-full bg-gray-200 text-gray-800 rounded-lg"> <!-- Ändere die Größe des Dropdowns hier -->
-                            <option value="english">English</option>
-                            <option value="german">German</option>
-                        </select>
-                    </div>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- Right Side: Results Box -->
                 <div class="flex-1 pl-0 md:pl-4 mt-4 md:mt-0">
+                    <h1>Englisch</h1>
+
                     <div class="h-40 border border-gray-300 p-2 rounded-lg overflow-y-auto">
                         <!-- Placeholder for API results -->
-                        <?php include_once('api.php') ?>
+                        <?php include('api.php') ?>
                     </div>
+                    <h1>Deutsch</h1>
+                    <div class="h-40 border border-gray-300 p-2 rounded-lg overflow-y-auto">
+                        <!-- Placeholder for API results -->
+                        <?php include('apiDeutsch.php') ?>
+                    </div>
+
+
                 </div>
             </div>
         </div>
