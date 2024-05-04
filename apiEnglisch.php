@@ -2,7 +2,6 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['word'])) {
     $inputWord = filter_input(INPUT_POST, 'word', FILTER_SANITIZE_STRING);
 
-    // Abfrage der WordsAPI für englische Synonyme
     $curl = curl_init();
     curl_setopt_array($curl, [
         CURLOPT_URL => "https://wordsapiv1.p.rapidapi.com/words/" . urlencode($inputWord) . "/synonyms",
@@ -29,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['word'])) {
     }
     curl_close($curl);
 
-    // Ausgabe der Ergebnisse
     if (!empty($results)) {
         echo "<ul>";
         foreach (array_unique($results) as $result) {
