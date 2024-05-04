@@ -6,9 +6,11 @@
     <title>Meine Webseite</title>
 </head>
 <body>
+
     <header>
         <h1>Willkommen bei PatentCheckX</h1>
     </header>
+    
     <nav>
         <ul>
             <li><a href="#">Startseite</a></li>
