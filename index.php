@@ -50,7 +50,7 @@
                 <div class="flex-1 pl-0 md:pl-4 mt-4 md:mt-0 md:w-1/2">
 
                     <!-- Left Side: Deutsche Box -->
-                    <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">Deutsch</h2>
+                    <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">German</h2>
                     <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
                         <!-- Placeholder for API results -->
                         <?php include ('apiDeutsch.php') ?>
@@ -60,11 +60,11 @@
                 <div class="flex-1 pl-0 md:pl-4 mt-4 md:mt-0 md:w-1/2">
 
                     <!-- Right Side: Englische Box -->
-                    <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">Englisch</h2>
+                    <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">English</h2>
 
                     <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
                         <!-- Placeholder for API results -->
-                        <?php include ('api.php') ?>
+                        <?php include ('apiEnglisch.php') ?>
                     </div>
                 </div>
             </div>
