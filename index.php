@@ -16,7 +16,7 @@
     <div class="min-h-screen flex flex-col items-center justify-center p-4">
 
         <div class="flex items-center justify-center mb-8">
-            <img src="img/patCheckerX.png" alt="Logo" class="h-20 md:h-24 lg:h-32 mr-2">
+            <img src="img/Logo_patCheckerX.gif" alt="Logo" class="h-20 md:h-24 mt-3 lg:h-32 mr-2">
         </div>
 
         <?php include ('includes/synonymchecker.php') ?>
