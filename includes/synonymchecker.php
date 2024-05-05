@@ -1,7 +1,6 @@
 <div class="w-full max-w-6xl mx-auto p-4 bg-white rounded-2xl">
     <h2 class="text-2xl font-bold text-center mb-4 mt-4 text-gray-800">Synonym Finder</h2>
     
-    <!-- Search for Synonyms Form Section -->
     <div class="flex justify-center items-center">
         <div class="w-full md:max-w-md">
             <form action="" method="post" class="border-b border-gray-400 py-2">
@@ -17,7 +16,6 @@
         </div>
     </div>
 
-    <!-- Two-column layout for German and English sections -->
     <div class="flex flex-col md:flex-row justify-between mt-4">
         <div class="w-full md:w-1/2 px-2 md:px-4">
             <h2 class="text-xl font-bold text-center mb-4 text-gray-800">German</h2>
@@ -42,8 +40,7 @@
         </div>
     </div>
 
-    <!-- Manually Add Word Input Section -->
-    <div class="flex justify-center items-center mt-5 mb-4"> <!-- Added bottom margin to match top spacing -->
+    <div class="flex justify-center items-center mt-5 mb-4">
         <div class="w-full md:max-w-md">
             <h3 class="text-l font-bold text-center mb-2 text-gray-800">Manually Word Input:</h3>
             <form action="" method="post" class="border-b border-gray-400 py-2">
