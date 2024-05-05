@@ -28,7 +28,7 @@
             </div>
             <button type="submit"
                 class="bg-blue-500 mt-3 text-white px-1 py-1 rounded-lg hover:bg-blue-600 text-sm md:text-base w-full">
-                Add to Patent Finder
+                Add Synonyms to Patent Finder
             </button>
         </div>
 
@@ -41,7 +41,7 @@
             </div>
             <button onclick="addWordsEnglish()"
                 class="bg-blue-500 mt-3 text-white px-1 py-1 rounded-lg hover:bg-blue-600 text-sm md:text-base w-full">
-                Add to Patent Finder
+                Add Synonyms to Patent Finder
             </button>
         </div>
     </div>

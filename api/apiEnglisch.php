@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['word'])) {
         }
         echo "</ul>";
     } else {
-        echo "<p>No english synonyms found for '$inputWord'.</p>";
+        echo "<p style='text-align: center;'>No english synonyms found for '" . htmlspecialchars($inputWord) . "'.</p>";
     }
 }
 ?>

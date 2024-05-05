@@ -4,17 +4,20 @@
 
         <!-- erstes feld  muss required sein -->
         <div class="flex-1 pr-0 md:pr-4">
-            <input type="text" placeholder="Enter text" class="border border-gray-300 p-4 w-3/4 rounded-lg mb-4" id="inputFirstPatent" disabled>
+            <input type="text" placeholder="Add in Synonyms"
+                class="border border-gray-300 p-3 w-3/4 rounded-lg mb-4 text-center" id="inputFirstPatent" disabled>
             <div class="relative mb-4">
                 <select id="operator2" name="operator2"
                     class="border-none outline-none p-3 w-3/4 bg-gray-200 text-gray-800 rounded-lg text-center">
-                    <option value="and">AND</option>
-                    <option value="or">OR</option>
+                    <option value="and" class="text-center">AND</option>
+                    <option value="or" class="text-center">OR</option>
                 </select>
             </div>
             <div class="flex mb-4">
                 <div class="w-3/4 pr">
-                    <input type="text" placeholder="Enter text" class="border border-gray-300 p-4 w-full rounded-lg" id="inputSecondPatent" disabled>
+                    <input type="text" placeholder="Add in Synonyms"
+                        class="border border-gray-300 p-3 w-full rounded-lg text-center" id="inputSecondPatent"
+                        disabled>
                 </div>
                 <div class="w-1/4 pl-4">
                     <button
@@ -26,15 +29,16 @@
             <div class="relative mb-4">
                 <select id="operator2" name="operator2"
                     class="border-none outline-none p-3 w-3/4 bg-gray-200 text-gray-800 rounded-lg text-center">
-                    <option value="and">AND</option>
-                    <option value="or">OR</option>
+                    <option value="and" class="text-center">AND</option>
+                    <option value="or" class="text-center">OR</option>
                 </select>
             </div>
-            <input type="text" placeholder="Enter text" class="border border-gray-300 p-4 w-3/4 rounded-lg mb-4" id="inputThirdPatent" disabled>
+            <input type="text" placeholder="Add in Synonyms"
+                class="border border-gray-300 p-3 w-3/4 rounded-lg mb-4 text-center" id="inputThirdPatent" disabled>
         </div>
 
         <div class="flex-1 mt-4 md:mt-0">
-            <div class="h-48 border border-gray-300 p-2 rounded-lg overflow-y-auto">
+            <div class="h-48 border border-gray-300 p-2 rounded-lg overflow-y-auto text-center">
                 Search results display here
             </div>
         </div>
