@@ -44,7 +44,7 @@
 
                     <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">German</h2>
                     <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
-                        <?php include ('apiDeutsch.php') ?>
+                        <?php include ('api/apiDeutsch.php') ?>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@
                     <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">English</h2>
 
                     <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
-                        <?php include ('apiEnglisch.php') ?>
+                        <?php include ('api/apiEnglisch.php') ?>
                     </div>
                 </div>
             </div>
