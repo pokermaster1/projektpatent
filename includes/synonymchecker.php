@@ -23,10 +23,10 @@
         <div class="flex-1 pl-0 md:pl-4 mt-4 md:mt-0 md:w-1/2">
 
             <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">German</h2>
-            <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
+            <div id="wortListeContainer2" class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
                 <?php include ('api/apiDeutsch.php') ?>
             </div>
-            <button type="submit"
+            <button onclick="addWordsGerman()"
                 class="bg-blue-500 mt-3 text-white px-1 py-1 rounded-lg hover:bg-blue-600 text-sm md:text-base w-full">
                 Add Synonyms to Patent Finder
             </button>

@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="img/patCheckerX.png">
     <script src="scripts.js"></script>
 
+
 </head>
 
 <body class="bg-gray-100">
