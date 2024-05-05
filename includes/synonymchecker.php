@@ -36,10 +36,10 @@
 
             <h2 class="text-xl md:text-xl lg:text-xl font-bold text-center mb-4 text-blue-600">English</h2>
 
-            <div class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
+            <div id="wortListeContainer" class="h-40 border border-gray-300 md:w-full p-2 rounded-lg overflow-y-auto">
                 <?php include ('api/apiEnglisch.php') ?>
             </div>
-            <button type="submit"
+            <button onclick="addWordsEnglish()"
                 class="bg-blue-500 mt-3 text-white px-1 py-1 rounded-lg hover:bg-blue-600 text-sm md:text-base w-full">
                 Add to Patent Finder
             </button>

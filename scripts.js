@@ -1,62 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const word = document.getElementById('word').value;
-        fetch(`https://www.openthesaurus.de/synonyme/search?q=${encodeURIComponent(word)}&format=application/json&similar=true`)
-            .then(response => response.json())
-            .then(data => {
-                const resultsContainer = document.querySelector('.results-deutsch');
-                resultsContainer.innerHTML = '';
-                if (data.synsets.length > 0) {
-                    const list = document.createElement('ul');
-                    new Set(data.synsets.flatMap(synset => synset.terms.map(term => term.term))).forEach(term => {
-                        const item = document.createElement('li');
-                        item.textContent = term;
-                        list.appendChild(item);
-                    });
-                    resultsContainer.appendChild(list);
-                } else {
-                    resultsContainer.innerHTML = '<p>Keine deutschen Synonyme gefunden.</p>';
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching synonyms:', error);
-                document.querySelector('.results-deutsch').innerHTML = '<p>Fehler beim Abrufen der Synonyme.</p>';
-            });
+function addWordsEnglish() {
+    var wörterListe = document.getElementById('wortListeContainer').querySelector('ul');
+    var wörter = [];
+    wörterListe.querySelectorAll('li').forEach(function (item) {
+        wörter.push(item.textContent);
     });
-});
 
+    var wörterString = wörter.join(', ');
 
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const word = document.getElementById('word').value;
-        const headers = {
-            "X-RapidAPI-Key": "17e1936995msh810d5a055de8d9bp1adc3bjsn7296c038812c",
-            "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com"
-        };
-        fetch(`https://wordsapiv1.p.rapidapi.com/words/${encodeURIComponent(word)}/synonyms`, { headers })
-            .then(response => response.json())
-            .then(data => {
-                const resultsContainer = document.querySelector('.results-english');
-                resultsContainer.innerHTML = '';
-                if (data.synonyms && data.synonyms.length > 0) {
-                    const list = document.createElement('ul');
-                    new Set(data.synonyms).forEach(synonym => {
-                        const item = document.createElement('li');
-                        item.textContent = synonym;
-                        list.appendChild(item);
-                    });
-                    resultsContainer.appendChild(list);
-                } else {
-                    resultsContainer.innerHTML = '<p>Keine englischen Synonyme gefunden.</p>';
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching synonyms:', error);
-                document.querySelector('.results-english').innerHTML = '<p>Fehler beim Abrufen der Synonyme.</p>';
-            });
-    });
-});
+    // Überprüfen, ob das erste Input-Feld leer ist
+    if (document.getElementById('inputFirstPatent').value === '') {
+        document.getElementById('inputFirstPatent').value = wörterString;
+    } else if (document.getElementById('inputSecondPatent').value === '') {
+        // Wenn das erste Feld nicht leer ist, überprüfe das zweite Feld
+        document.getElementById('inputSecondPatent').value = wörterString;
+    } else {
+        // Wenn das erste und das zweite Feld nicht leer sind, schreibe in das dritte Feld
+        document.getElementById('inputThirdPatent').value = wörterString;
+    }
+}

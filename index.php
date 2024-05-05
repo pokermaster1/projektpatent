@@ -8,6 +8,7 @@
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="img/patCheckerX.png">
+    <script src="scripts.js"></script>
 
 </head>
 
