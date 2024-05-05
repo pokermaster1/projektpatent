@@ -1,49 +1,49 @@
-<div class="w-full md:max-w-6xl p-4 bg-white shadow-md rounded-lg">
-    <h2 class="text-2xl md:text-2xl lg:text-2xl font-bold text-center mb-4 text-blue-600">Patent Finder</h2>
-    <div class="flex flex-col md:flex-row md:justify-between">
+<div class="w-full max-w-6xl mx-auto px-4 py-4 bg-white rounded-2xl">
+    <h2 class="text-2xl font-bold text-center mb-4 mt-4 text-gray-800">Patent Finder</h2>
+    <div class="flex flex-col lg:flex-row lg:justify-between">
 
-        <!-- erstes feld  muss required sein -->
-        <div class="flex-1 pr-0 md:pr-4">
+        <div class="lg:flex-1 px-4 mt-4 mb-4">
             <input type="text" placeholder="Add in Synonyms"
-                class="border border-gray-300 p-3 w-3/4 rounded-lg mb-4 text-center" id="inputFirstPatent" disabled>
+                class="border border-gray-300 p-3 w-full rounded-lg mb-4 text-center focus:border-gray-500"
+                id="inputFirstPatent" disabled>
             <div class="relative mb-4">
                 <select id="operator2" name="operator2"
-                    class="border-none outline-none p-3 w-3/4 bg-gray-200 text-gray-800 rounded-lg text-center">
-                    <option value="and" class="text-center">AND</option>
-                    <option value="or" class="text-center">OR</option>
+                    class="border border-gray-400 p-3 w-full bg-gray-300 text-gray-800 rounded-lg text-center">
+                    <option value="and">AND</option>
+                    <option value="or">OR</option>
                 </select>
             </div>
             <div class="flex mb-4">
-                <div class="w-3/4 pr">
+                <div class="w-full">
                     <input type="text" placeholder="Add in Synonyms"
-                        class="border border-gray-300 p-3 w-full rounded-lg text-center" id="inputSecondPatent"
-                        disabled>
-                </div>
-                <div class="w-1/4 pl-4">
-                    <button
-                        class="bg-blue-500 text-white px-1 py-1 rounded-lg hover:bg-blue-600 text-sm md:text-base w-full">
-                        Find Patents
-                    </button>
+                        class="border border-gray-300 p-3 w-full rounded-lg text-center focus:border-gray-500"
+                        id="inputSecondPatent" disabled>
                 </div>
             </div>
             <div class="relative mb-4">
                 <select id="operator2" name="operator2"
-                    class="border-none outline-none p-3 w-3/4 bg-gray-200 text-gray-800 rounded-lg text-center">
-                    <option value="and" class="text-center">AND</option>
-                    <option value="or" class="text-center">OR</option>
+                    class="border border-gray-400 p-3 w-full bg-gray-300 text-gray-800 rounded-lg text-center focus:border-gray-500 focus:ring-0">
+                    <option value="and">AND</option>
+                    <option value="or">OR</option>
                 </select>
             </div>
             <input type="text" placeholder="Add in Synonyms"
-                class="border border-gray-300 p-3 w-3/4 rounded-lg mb-4 text-center" id="inputThirdPatent" disabled>
+                class="border border-gray-300 p-3 w-full rounded-lg text-center focus:border-gray-500"
+                id="inputThirdPatent" disabled>
+            <button
+                class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 text-sm lg:text-base w-full text-center mb-2 mt-4">
+                Find Patents
+            </button>
+            <button onclick="clearAllValues()" id="clearButton"
+                class="bg-red-400 text-white px-4 py-2 rounded-lg hover:bg-gray-600 text-sm lg:text-base w-full text-center mb-4">
+                Delete Data
+            </button>
         </div>
 
-        <div class="flex-1 mt-4 md:mt-0">
-            <div class="h-48 border border-gray-300 p-2 rounded-lg overflow-y-auto text-center">
+        <div class="lg:flex-1 px-4 mt-4 mb-4">
+            <div class="h-full border border-gray-300 p-2 rounded-lg overflow-y-auto text-center">
                 Search results display here
             </div>
         </div>
     </div>
-    <button onclick="clearAllValues()"  id="clearButton" class="mb-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-    Daten löschen
-    </button>
 </div>
