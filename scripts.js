@@ -7,7 +7,6 @@ function addWordsEnglish() {
 
     var wörterString = wörter.join(', ');
 
-    // Bestimmen des Zielinputfelds und Schlüssels für das Speichern
     var targetInputId;
     var storageKey;
     if (document.getElementById('inputFirstPatent').value === '') {
@@ -21,10 +20,8 @@ function addWordsEnglish() {
         storageKey = 'gespeicherteWörter3';
     }
 
-    // Speichern der Wörter im Local Storage mit dem zugeordneten Schlüssel
     localStorage.setItem(storageKey, wörterString);
 
-    // Eingabe der gespeicherten Wörter ins entsprechende Feld
     document.getElementById(targetInputId).value = wörterString;
 }
 
@@ -37,7 +34,6 @@ function addWordsGerman() {
 
     var wörterString = wörter.join(', ');
 
-    // Bestimmen des Zielinputfelds und Schlüssels für das Speichern
     var targetInputId;
     var storageKey;
     if (document.getElementById('inputFirstPatent').value === '') {
@@ -51,15 +47,13 @@ function addWordsGerman() {
         storageKey = 'gespeicherteWörter3';
     }
 
-    // Speichern der Wörter im Local Storage mit dem zugeordneten Schlüssel
     localStorage.setItem(storageKey, wörterString);
 
-    // Eingabe der gespeicherten Wörter ins entsprechende Feld
     document.getElementById(targetInputId).value = wörterString;
 }
 
 function loadWords() {
-    // Laden der Wörter aus dem Local Storage für jedes Inputfeld
+
     var fields = ['inputFirstPatent', 'inputSecondPatent', 'inputThirdPatent'];
     fields.forEach(function(field, index) {
         var storageKey = 'gespeicherteWörter' + (index + 1);
@@ -71,16 +65,13 @@ function loadWords() {
 }
 
 
-// Event Listener hinzufügen, um die Wörter beim Laden der Seite zu laden
 document.addEventListener('DOMContentLoaded', loadWords);
 
 function clearAllValues() {
-    // Alle Inputfelder leeren
     document.getElementById('inputFirstPatent').value = '';
     document.getElementById('inputSecondPatent').value = '';
     document.getElementById('inputThirdPatent').value = '';
 
-    // Löschen der gespeicherten Wörter aus dem Local Storage für jedes Feld
     localStorage.removeItem('gespeicherteWörter1');
     localStorage.removeItem('gespeicherteWörter2');
     localStorage.removeItem('gespeicherteWörter3');

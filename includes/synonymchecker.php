@@ -33,7 +33,7 @@
             <div id="wortListeContainer" class="h-40 border border-gray-300 p-2 rounded-lg overflow-y-auto">
                 <?php include('api/apiEnglisch.php'); ?>
             </div>
-            <button onclick="addWordsEnglish"
+            <button onclick="addWordsEnglish()"
                 class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 mt-3 text-sm md:text-base w-full">
                 Add Synonyms to Patent Finder
             </button>
