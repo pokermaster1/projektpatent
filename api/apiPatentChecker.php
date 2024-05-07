@@ -3,9 +3,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fetchPatents'])) {
     $endpoint = 'https://serpapi.com/search';
     $apiKey = '35c192a80d099000bd30fc10113882c8baf6808fd9d57cd6e6b8069ea826688c';
 
-    echo "<pre>POST Data: ";
-    print_r($_POST);
-    echo "</pre>";
+   # echo "<pre>POST Data: ";
+   # print_r($_POST);
+    #echo "</pre>";
 
     // An array to store the strings to be combined with operators
     $combinedWords = [];
@@ -21,18 +21,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fetchPatents'])) {
                 $combinedWords[] = '(' . implode(' OR ', $enclosedWords) . ')';
             }
 
-            echo "<pre>{$fieldName}: ";
-            print_r($enclosedWords);
-            echo "</pre>";
+            #echo "<pre>{$fieldName}: ";
+            #print_r($enclosedWords);
+            #echo "</pre>";
         }
     }
 
     // Combining the word groups with semicolons
     $query = implode(';', $combinedWords);
 
-    echo "<pre>Final Query: ";
-    print_r($query);
-    echo "</pre>";
+    #echo "<pre>Final Query: ";
+    #print_r($query);
+    #echo "</pre>";
 
     $params = [
         'engine' => 'google_patents',
