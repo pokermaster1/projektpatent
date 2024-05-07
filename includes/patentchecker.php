@@ -1,6 +1,6 @@
 <div class="w-full max-w-6xl mx-auto px-4 py-4 bg-white rounded-2xl">
     <h2 class="text-2xl font-bold text-center mb-4 mt-4 text-gray-800">Patent Finder</h2>
-    <div class="flex flex-col lg:flex-row lg:justify-between">
+    <div class="flex lg:flex-row lg:justify-between">
 
         <div class="lg:flex-1 px-4 mt-4 mb-4">
             <form action="" method="post">
@@ -39,13 +39,15 @@
                     class="bg-red-400 text-white px-4 py-2 rounded-lg hover:bg-gray-600 text-sm lg:text-base w-full text-center mb-4">
                     Delete Data
                 </button>
+            </form>
         </div>
 
-        <div class="lg:flex-1 px-4 mt-4 mb-4">
-            <div class="h-full border border-gray-300 p-2 rounded-lg overflow-y-auto text-center">
+        <div class="lg:flex-1 px-4 mt-8 mb-4">
+            <div class="h-96 overflow-y-auto border border-gray-300 p-2 rounded-lg text-center">
                 <?php include_once ('api/apiPatentChecker.php') ?>
-
             </div>
         </div>
+
     </div>
+
 </div>
