@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['fetchPatents'])) {
     $endpoint = 'https://serpapi.com/search';
-    $apiKey = '35c192a80d099000bd30fc10113882c8baf6808fd9d57cd6e6b8069ea826688c';
+    $apiKey = '-';
 
    # echo "<pre>POST Data: ";
    # print_r($_POST);
