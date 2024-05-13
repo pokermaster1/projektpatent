@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['word'])) {
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => [
-            "X-RapidAPI-Key: 17e1936995msh810d5a055de8d9bp1adc3bjsn7296c038812c",
+            "X-RapidAPI-Key: -",
             "X-RapidAPI-Host: wordsapiv1.p.rapidapi.com"
         ],
     ]);
